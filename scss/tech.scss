@@ -1,0 +1,56 @@
+.tech {
+  align-items: center;
+  background: $earls-green;
+  border-radius: $tech-border-radius;
+  display: flex;
+  flex-direction: column;
+  min-height: $tech-height; 
+  padding: 40px 20px;
+  position: relative;
+  width: $tech-width;
+
+  &:hover::before {
+    left: 10px;
+    top: 10px;
+  }
+
+  &::before {
+    border: 1px solid $earls-green;
+    border-radius: $tech-border-radius;
+    content: '';
+    height: 100%;
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: -1;
+    transition: top 0.5s ease, left 0.5s ease;
+  }
+}
+
+.tech-image {
+  width: $tech-logo-size;
+  height: $tech-logo-size;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+%tech-text {
+  font-size: $text-medium;
+  text-align: center;
+}
+
+.tech-title {
+  @extend %tech-text;
+  margin-bottom: 15px;
+}
+
+.tech-info {
+  @extend %tech-text; 
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.tech-description {
+  @extend %tech-text;
+}

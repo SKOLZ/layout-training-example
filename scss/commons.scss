@@ -1,0 +1,24 @@
+.content {
+  margin: $nav-height auto 0;
+  padding: 60px 40px;
+  max-width: $content-width;
+  width: 100%;
+
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+.tech-list {
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
+  .tech {
+    margin: 20px;
+  }
+}

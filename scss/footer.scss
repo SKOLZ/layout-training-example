@@ -1,0 +1,24 @@
+.footer {
+  align-items: center;
+  background: $cerulean;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+
+  .logo {
+    height: $footer-logo-height;
+    margin-bottom: 20px;
+  }
+}
+
+.footer-title {
+  color: $white;
+  font-size: $text-medium;
+  margin-bottom: 15px;
+}
+
+.footer-copyright {
+  color: $white;
+  font-size: $text-small;
+  align-self: flex-end;
+}
